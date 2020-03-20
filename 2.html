@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+  <head>
+    <title>2단계 - 미로를 지나 목적지에 도달하세요!</title>
+    <meta charset="utf-8">
+    <script>
+    function wall(){
+         alert("제한시간 단축! : -20초");
+    }
+    </script>
+
+    <style>
+    body {
+      height: 100vh;
+  margin: 0;
+  background: #2c003e;
+    }
+    #HEADER {
+      color: #FFFFFF;
+      background-color: #2c003e;
+      height: 175px;
+    }
+
+    #SECTION {
+      color: #000000;
+      background-color: #d2fafb;
+      height: 450px;
+      margin-top: 70px;
+      margin-left: 200px;
+      margin-right: 200px;
+      border: 3px solid #fe346e;
+
+    }
+      #FOOT {
+        position: relative;
+        color: #FFFFFF;
+        margin-right: 90px;
+        clear: both;
+
+    }
+
+    #wall_1{
+      position: static;
+    }
+    #wall_2{
+      position: absolute;
+      margin-top:67px;
+
+    }
+    #wall_3{
+      position: absolute;
+      margin-top:67px;
+      margin-left:190px;
+
+    }
+    #wall_4{
+      position: absolute;
+      margin-left:70px;
+      margin-top: 70px;
+
+    }
+    #wall_5{
+      position: absolute;
+      margin-left:330px;
+
+    }
+    #wall_6{
+      position: absolute;
+      margin-left:330px;
+      margin-top:70px;
+
+    }
+    #wall_7{
+      position: absolute;
+      margin-top:120px;
+      margin-left:453px;
+
+    }
+    #wall_8{
+      position: absolute;
+      margin-top:120px;
+      margin-left:577px;
+
+    }
+    #wall_9{
+      position: absolute;
+      margin-left:0px;
+      margin-top: 0px;
+      height:10px;
+}
+    #wall_10{
+      position: absolute;
+      margin-top:242px;
+      margin-left:350px;
+      height:15px;
+
+      }
+      #wall_11{
+        position: absolute;
+        margin-top:37px;
+        margin-left:805px;
+        height:220px;
+
+        }
+        #wall_12{
+          position: absolute;
+          margin-top:160px;
+          margin-left:615px;
+          height:100px;
+
+          }
+        #wall_13{
+          position: absolute;
+          margin-top:160px;
+          margin-left:855px;
+          height:100px;
+
+            }
+        #wall_14{
+          position: absolute;
+          margin-top:200px;
+          margin-left:695px;
+          height:40px;
+
+            }
+        #wall_15{
+          position: absolute;
+          margin-top:200px;
+          margin-left:815px;
+          height:40px;
+
+                }
+       #wall_16{
+         position: absolute;
+         margin-top:120px;
+         margin-left:615px;
+         height:40px;
+
+                        }
+       #wall_17{
+        position: absolute;
+        margin-top:120px;
+        margin-left:895px;
+        height:40px;
+        }
+       #wall_18{
+        position: absolute;
+        margin-top:0px;
+        margin-left:655px;
+        height:40px;
+        }
+        #wall_19{
+         position: absolute;
+         margin-top:40px;
+         margin-left:715px;
+         height:40px;
+         }
+         #wall_20{
+          position: absolute;
+          margin-top:80px;
+          margin-left:745px;
+          height:40px;
+          }
+        #wall_21{
+          position: absolute;
+          margin-left:520px;
+          margin-top: 0px;
+          height:10px;
+      }
+      #wall_22{
+        position: absolute;
+        margin-left:1025px;
+        margin-top: 0px;
+        height:450px;
+    }
+    .btn {
+      width: 50px;
+      display: inline-block;
+      margin: 5% 6px;
+      padding: 2px 0px;
+      text-align: center;
+      background-color: #512b58;
+      position: absolute;
+      color: #fff;
+    }
+    #key {
+      margin-left:1140px;
+      margin-top: 0px;
+    }
+
+    </style>
+
+  </head>
+  <body>
+    <div id="HEADER" align="center">
+      <br> <!-- 사이트 설명 -->
+     <h1>보이지 않는 미로를 지나 목적지에 도달하세요</h1>
+     <p>이번엔 마우스 포인터 게임입니다. 마우스 포인터를 움직여 미로를 통과하세요</p>
+     <p>주어진 자료를 해석해 숨겨진 길을 찾으실 수 있습니다.</p>
+     <p>미로의 벽에 닿으면 제한시간이 단축됩니다.</p>
+    </div>
+  <div id="SECTION">
+    <a onMouseOver='wall()'>
+    <img src="pink_wall.jpg" width="190" id="wall_1">
+    <img src="pink_wall.jpg" width="195" id="wall_4">
+    <img src="pink_wall.jpg" width="195" id="wall_5">
+    <img src="pink_wall.jpg" width="195" id="wall_6">
+    <img src="pink_wall.jpg" width="580" id="wall_9">
+    <img src="pink_wall.jpg" width="552" id="wall_21">
+    <img src="pink_wall.jpg" width="60" id="wall_22">
+    <img src="m_wall4.png" width="80" id="wall_12">
+    <img src="m_wall4.png" width="80" id="wall_13">
+    <img src="m_wall4.png" width="40" id="wall_14">
+    <img src="m_wall4.png" width="40" id="wall_15">
+    <img src="m_wall4.png" width="40" id="wall_16">
+    <img src="m_wall4.png" width="40" id="wall_17">
+    <img src="m_wall4.png" width="240" id="wall_18">
+    <img src="m_wall4.png" width="120" id="wall_19">
+    <img src="m_wall4.png" width="60" id="wall_20">
+    <br>
+    <img src="pink_wall.jpg" width="190" id="wall_2">
+    <img src="pink_wall.jpg" width="190" id="wall_3">
+    <img src="pink_wall.jpg" width="137" id="wall_7">
+    <img src="pink_wall.jpg" width="137" id="wall_8">
+    <img src="pink_wall.jpg" width="912" id="wall_10">
+    <img src="m_wall4.png" width="320" id="wall_11">
+    <a href="3.html" id=key class=btn>CLICK</a>
+
+    </a>
+  </div>
+
+  <div id="FOOT">
+  <p>※본 웹사이트는 2020년 대전대신고등학교 신입생 수련회 게이미피케이션 활동을 위해 제작되었습니다.</p>
+  <p>사이트내 경고문구는 모두 픽션입니다.</p>
+  <p>제작자 정보 및 연락처
+  <br>3학년 김승윤 // 010-4524-5998
+  <br>3학년 이주엽 // 010-3911-7382
+  </p>
+  </div>
+</body>
+</html>
