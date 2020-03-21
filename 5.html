@@ -1,32 +1,45 @@
 <!doctype html>
 <html>
   <head>
-    <title>5단계 - 백신키를 입력하세요!</title>
+    <title>5단계 프로토타입</title>
     <meta charset="utf-8">
     <script>
+    function PWcheck(){
+      var x, pw;
+      pw = 1111;
+      x = document.getElementById("PASSWORD").value;
+      if (x == pw ) {
+          alert("[암호해독 완료] \n감염코드:Daeshin2020y//1grade#@welcome@#\n접근이 승인되었습니다.");
+      } else {
+          text = "[warning!]잘못된 암호접근입니다! 제한시간 단축 : -30초";
+      }
+      document.getElementById("warning").innerHTML = text;
+  }
     </script>
     <style>
     body {
-      height: 100vh;
-  margin: 0;
-  background: #841212;
+      margin: 00;
+      background: #f15e18;
     }
     #HEADER {
-      color: #FFFFFF;
-      background-color: #841212;
+      color: #292929;
+      background-color: #f15e18;
       height: 300px;
+      margin-top: 25px;
     }
+
 
     #SECTION {
-      color: #000000;
-      background-color: #FFFFFF;
+      color: #f15e18;
+      background-color: #292929;
       height: 220px;
-      margin-top: 10px;
-      margin-left: 100px;
-      margin-right: 100px;
-      padding-left: 10px;
+      padding-top: 7px;
+      max-width: 1200px;
+      margin: 0 auto;
 
     }
+
+
       #FOOT {
         position: relative;
         color: #FFFFFF;
@@ -48,18 +61,22 @@
      <p>앞 4단계를 넘어갈 때 주어진 문구가 힌트입니다!</p>
     </div>
 
+  <div class="MID">
 
     <div id="SECTION" align="center">
       <span>
         <h2>백신키 입력 - 감염코드:Daeshin2020y//1grade#@welcome@#</h2>
-        password : <input id='PASSWORD' type='text' maxlength='4'/>
-        <input type='submit'><br>
-        <p>[warning!] 입력횟수 제한을 초과할 시 이 컴퓨터에서 백신키를 사용할 수 없습니다.
-        <br>남은 입력 횟수 : nn 회</p>
+        password : <input id="PASSWORD" type="text" maxlength="4"/>
+        <button type="button" onclick="PWcheck()">제출</button><br>
+        <p>[warning!] 입력횟수 제한을 초과할 시 이 컴퓨터에서 백신키를 사용할 수 없습니다.</p>
+        <br><p id="warning" style="color:red"><p>
         <p><strong>[game rule]무작위로 아무 숫자나 입력하지 마세요.</strong></p>
       </span>
 
+
+
     </div>
+  </div>
 
     <div id="FOOT">
     <p>※본 웹사이트는 2020년 대전대신고등학교 신입생 수련회 게이미피케이션 활동을 위해 제작되었습니다.</p>
