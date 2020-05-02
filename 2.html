@@ -15,15 +15,34 @@
   margin: 0;
   background: #2c003e;
     }
+    h1 {
+      text-shadow:
+3px 3px 0px #eb452b,
+7px 7px 0px #efa032,
+11px 11px 0px #46b59b;
+      font-size: 50px;
+    }
+    #FOOT P {
+      font-size: 29px;
+      text-shadow:
+2px 2px 0px #eb452b,
+4px 4px 0px #efa032,
+6px 6px 0px #46b59b;
+    }
     #HEADER {
       color: #FFFFFF;
       background-color: #2c003e;
       height: 175px;
+      font-size: 18px;
+      text-shadow:
+1px 1px 0px #eb452b,
+2px 2px 0px #efa032,
+4px 4px 0px #46b59b;
     }
 
     #SECTION {
       color: #000000;
-      background-color: #d2fafb;
+      background-color: #FFEEE4;
       height: 450px;
       width: 1270px;
       margin-top: 70px;
@@ -195,10 +214,9 @@
   <body>
     <div id="HEADER" align="center">
       <br> <!-- 사이트 설명 -->
-     <h1>보이지 않는 미로를 지나 목적지에 도달하세요</h1>
+     <h1>미로를 탈출하라!</h1>
      <p>이번엔 마우스 포인터 게임입니다. 마우스 포인터를 움직여 미로를 통과하세요</p>
      <p>주어진 자료를 해석해 숨겨진 길을 찾으실 수 있습니다.</p>
-     <p>미로의 벽에 닿으면 제한시간이 단축됩니다.</p>
     </div>
   <div id="SECTION">
     <a onMouseOver='wall()'>
@@ -230,13 +248,8 @@
     </a>
   </div>
 
-  <div id="FOOT">
-  <p>※본 웹사이트는 2020년 대전대신고등학교 신입생 수련회 게이미피케이션 활동을 위해 제작되었습니다.</p>
-  <p>사이트내 경고문구는 모두 픽션입니다.</p>
-  <p>제작자 정보 및 연락처
-  <br>3학년 김승윤 // 010-4524-5998
-  <br>3학년 이주엽 // 010-3911-7382
-  </p>
+  <div id="FOOT" align="center">
+    <p>미로의 벽에 닿으면 제한시간이 단축됩니다!!</p>
   </div>
 </body>
 </html>
