@@ -4,8 +4,19 @@
     <title>3단계 - 양손실 막기 프로젝트</title>
     <meta charset="utf-8">
     <script>
+    function ANcheck(){
+      var x, an;
+      an = 11;
+      x = document.getElementById("ANSWER").value;
+      if (x == an ) {
+          location.href="4.html"
+      } else {
+          alert("[오답입니다.] \n 제한시간 -30초")
+      }
+      document.getElementById("warning").innerHTML = text;
+  }
     </script>
-    <style>
+    <style type="text/css">
   @font-face { font-family: 'DungGeunMo';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
   font-weight: normal;
@@ -22,6 +33,7 @@
       height: 270px;
       margin-top: 0px;
       margin-bottom: 10px;
+      font-size: 18px;
     }
 
     #SECTION {
@@ -36,8 +48,7 @@
       #FOOT {
         position: relative;
         color: #FFFFFF;
-        margin-right: 90px;
-        clear: both;
+        margin-top: 20px;
 
     }
 
@@ -108,6 +119,9 @@
      <li>1마리 이상 타고 있어야 움직인다.</li>
      <li>양쪽 기슭 모두 늑대가 양보다 많아지면 양은 잡아먹힌다.</li>
 
+     <br>답 : <input id="ANSWER" type="text" maxlength="2"/>
+     <button type="button" onclick="ANcheck()">제출</button><br>
+
  </center>
     </div>
 
@@ -123,7 +137,6 @@
     </div>
 
     <div id="FOOT">
-
     </div>
   </body>
 </html>
